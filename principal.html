@@ -4,34 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="globalStyles.css" />
   </head>
   <body>
     <header>
-      <h1>Trabalho de Fundamentos de Desenvolvimento de Software</h1>
-      <img src="assets/uninter.png" alt="" />
+      <div id="header">
+        <div id="imgHeader"></div>
+        <img src="assets/uninter.png" alt="" id="logo" />
+        <h1 id="titulo">
+          Trabalho de Fundamentos de Desenvolvimento de Software
+        </h1>
 
-      <div id="menu">
-        <button>Integrante</button>
-        <button>Tabela</button>
-        <button>Sobre</button>
+        <div id="menu">
+          <button
+            onclick="document.getElementById('integrante').scrollIntoView({ behavior: 'smooth' })"
+          >
+            Integrante
+          </button>
+          <button
+            onclick="document.getElementById('tarefas').scrollIntoView({ behavior: 'smooth' })"
+          >
+            Tabela
+          </button>
+          <button
+            onclick="document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' })"
+          >
+            Sobre
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <div id="integrantes">
+        <h2>Integrantes</h2>
         <div id="integrante">
-          <h2>Aluno: Germano Iop Rosa</h2>
-          <h2>RG:4954879</h2>
+          <h2>Integrante</h2>
           <img src="assets/yo.jpg" alt="" width="150px" />
+          <h3>Nome: Germano Iop Rosa</h3>
+          <h3>RG:4954879</h3>
+          <h3>Hobbies: Musculação, Voleibol e Ciclismo;</h3>
+          <h3>
+            <a href="https://www.linkedin.com/in/germano-iop/"> Linkedin </a>
+          </h3>
+          <h3>
+            <a href="https://github.com/GermanoIop">Github</a>
+          </h3>
         </div>
       </div>
-      <div id="tarefas"></div>
-      <div id="sobre"></div>
+      <div id="tarefas">
+        <div id="cabecalhoBox">
+          <h2>Tarefas</h2>
+        </div>
+        <div id="corpoBox">
+          <div id="tarefa">
+            <p id="divBox">Atividade 1:</p>
+            <p id="divBox">Lista 1:</p>
+            <p id="divBox">Atividade 2</p>
+          </div>
+          <div id="responsavel">
+            <p id="divBox">Germano</p>
+            <p id="divBox">Germano</p>
+            <p id="divBox">Germano</p>
+          </div>
+        </div>
+      </div>
+      <div id="sobre">
+        <h2>Trabalho de Fundamentos de Desenvolvimento de Software</h2>
+        <h3>Objetivo:</h3>
+        <p>
+          Criar uma página web contendo informações sobre os trabalhos
+          anteriores e atual, sobre seus integrantes e formas de entrar em
+          contato
+        </p>
+        <h3>Linguagens Utilizadas</h3>
+        <p>
+          HTML (linguagem de marcação), CSS(Linguagem de estilo), e
+          Javascript(linguagem de programação voltada para criação de páginas
+          web).
+        </p>
+      </div>
     </main>
     <footer>
       <div id="contato">
-        <h1>contato:</h1>
-        <h3>email:germano_iop@msn.com</h3>
-        <h3>telefone:(55)991371863</h3>
+        <h3>contato:</h3>
+        <p>email:germano_iop@msn.com</p>
+        <p>telefone:(55)991371863</p>
       </div>
       <div id="creditos">
         <h3>Desenvolvido por Germano Iop Rosa</h3>

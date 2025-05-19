@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap");
+
+:root {
+  --color-blue: #4200ff;
+  --color-blueHover: #0a1ce557;
+  --color-softBlue: #4a6fab;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red: #d81a1a;
+  --color-green: #4ba036;
+  --color-grey-2: #343a40;
+  --color-grey-3: #dee2e6;
+  --color-grey-4: #e9ecef;
+  --color-grey-5: #f1f3f5;
+  --font-weigth-400: 400;
+  --font-weigth-700: 700;
+  --border-button: 1px;
+  --border-radius: 12px;
+}
+
+body {
+  font-family: "Underdog";
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  height: 350px;
+  padding-top: 30px;
+  background-color: var(--color-white);
+  background-color: #4a6fab;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  margin: 0px;
+  border: 0px;
+  padding: 0%;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+#logo {
+  border-radius: 50%;
+}
+
+#imgHeader {
+  height: 50%;
+}
+
+#titulo {
+  height: 25%;
+}
+
+#menu {
+  display: flex;
+  height: 25%;
+}
+
+button {
+  background-color: var(--color-white);
+  color: var(--color-softBlue);
+  font-family: "Underdog";
+  font-weight: var(--font-weigth-700);
+  font-size: 24px;
+  border: var(--color-white) var(--border-button) solid;
+  margin: 25px;
+  height: 48px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+#integrantes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#integrante {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 40px;
+  border: var(--color-softBlue) solid 1px;
+  border-radius: var(--border-radius);
+  padding: 20px;
+}
+
+#tarefas {
+  width: 800px;
+  height: 400px;
+  border: 2px solid var(--color-softBlue);
+  display: flex;
+  flex-direction: column;
+}
+#cabecalhoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+#corpoBox {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#tarefa {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+#responsavel {
+  width: 50%;
+  height: 100%;
+  border-left: 2px solid var(--color-softBlue);
+  display: flex;
+  flex-direction: column;
+}
+#divBox {
+  border-top: 2px solid var(--color-softBlue);
+  height: 33.3333%;
+  margin: 0px;
+  font-family: "Underdog";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-softBlue);
+}
